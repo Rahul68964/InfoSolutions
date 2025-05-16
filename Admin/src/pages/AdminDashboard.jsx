@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import taskimage from '../assets/task.png'
 import add from '../assets/add.png'
-import Task from '../components/task'
+import Task from '../components/Task'
 import TaskForm from '../components/TaskForm'
 import axios from 'axios'
 import {useNavigate} from 'react-router-dom'
