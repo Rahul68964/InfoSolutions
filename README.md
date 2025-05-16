@@ -81,4 +81,76 @@ A web-based task management system where an **Admin** uploads a CSV file contain
 ---
 
 ## 📂 Folder Structure (Suggested)
+```
+project/
+├── backend/
+│   ├── controllers/
+│   ├── models/
+│   ├── routes/
+│   ├── middleware/
+│   └── server.js
+│
+├── admin/
+│   └── src/
+│       ├── components/
+│       ├── pages/
+│       └── main.jsx
+│
+├── user/
+│   └── src/
+│       ├── components/
+│       ├── pages/
+│       └── main.jsx
+│
+└── README.md
+```
+
+
+
+
+---
+
+## 📦 Running Instructions
+
+### 🧑‍💼 Admin Panel
+
+```bash
+# Navigate to admin folder (frontend)
+cd admin
+
+# Delete old lock file to avoid conflicts
+rm package-lock.json
+
+# Install dependencies
+npm install
+
+# Start the development server
+npm run dev
+
+
+# Navigate to backend folder
+cd backend
+
+# Install all backend dependencies
+npm install
+
+# Start server using nodemon
+nodemon server.js
+
+# If nodemon is not installed, install it globally:
+npm install -g nodemon
+
+
+# Navigate to user folder (frontend)
+cd user
+
+# Delete package-lock.json to prevent dependency issues
+rm package-lock.json
+
+# Install dependencies
+npm install
+
+# Start the user-side development server
+npm run dev
+
 
